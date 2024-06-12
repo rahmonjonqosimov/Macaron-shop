@@ -1,0 +1,16 @@
+.model__owerley {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  background-color: #0003;
+  opacity: 1;
+  // animation: model 0.3s linear 0s forwards;
+  z-index: 9;
+}
+@keyframes model {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,29 @@
+#detail {
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+  animation: detail 0.3s linear 0s forwards;
+  width: 500px;
+  z-index: 10;
+  .detail__image {
+    width: 100%;
+    height: 400px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+@keyframes detail {
+  to {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
