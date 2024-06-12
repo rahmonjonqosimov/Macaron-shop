@@ -9,12 +9,12 @@
   margin: 0 auto;
   padding: 0 16px;
 }
-@font-face {
+/* @font-face {
   font-family: Proxima Nova;
   src: url(../src/fonts/Fontspring-DEMO-proximanova-regular.otf);
-}
+} */
 
 body {
-  font-family: Proxima Nova, sans-serif;
+  font-family: sans-serif;
   /* background: #e5e5e5; */
 }

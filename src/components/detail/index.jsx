@@ -2,6 +2,7 @@ import React from "react";
 import "./index.scss";
 import { useGetDetailProductQuery } from "../../context/productApi";
 import Loading from "../loading/index";
+import { MdOutlineShoppingCart } from "react-icons/md";
 
 const Deatil = ({ id }) => {
   const { data, isLoading } = useGetDetailProductQuery({ id: id });
@@ -17,6 +18,12 @@ const Deatil = ({ id }) => {
           </div>
           <h4>{data?.title}</h4>
           <p>{data?.description}</p>
+          <div className="detail__line">
+            <span className="price"> $ {data?.price}</span>
+            <button>
+              <MdOutlineShoppingCart /> <span>В корзину</span>
+            </button>
+          </div>
         </section>
       )}
     </>
